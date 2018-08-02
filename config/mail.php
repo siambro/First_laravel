@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'muntasirhasan32@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'Learn'),
     ],
 
     /*
@@ -101,6 +101,13 @@ return [
 
     'sendmail' => '/usr/sbin/sendmail -bs',
 
+    'stream'=>[
+        'ssl'=>[
+            'allow_self_signed'=> true,
+            'verify_peer'=> false,
+            'verufy_peer-name'=> false,
+        ],
+    ],
     /*
     |--------------------------------------------------------------------------
     | Markdown Mail Settings
